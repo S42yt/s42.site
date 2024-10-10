@@ -8,7 +8,7 @@
 <header>
 
 <h1>
-  Welcome to S42.site
+  Welcome To My Portfolio
 </h1>
 <h2>
   The Homepage of S42
@@ -39,12 +39,6 @@
      
 
  }
- #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Partikel-Hintergrund hinter dem Inhalt */
-}
  *::-webkit-scrollbar-track {
             border-radius: 5px;
             background-color: #000000;
@@ -62,7 +56,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            padding: 10px;
 
         }
       
@@ -125,6 +119,10 @@
                       <img src="https://skillicons.dev/icons?i=cs">
                       C-Sharp
                   </div>
+                  <div>
+                    <img src="https://skillicons.dev/icons?i=unity">
+                    Unity Engine
+                </div>
               
                   <div>
                       <img src="https://skillicons.dev/icons?i=nodejs">
@@ -159,23 +157,44 @@
  
   
   <style>
-  h1 {
-    transition: 1s;
+
+h1 {
+    position: relative;
+    display: inline-block;
+    color: white; /* Textfarbe */
+    overflow: hidden;
     margin-top: 50px;
     text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-  }
+    z-index: 1; /* Text über dem Hintergrund */
+}
 
-  h1:hover {
-  transition: 1s;border-radius: 20px;background-color: #0080ff;
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Beginnt außerhalb des Sichtfeldes */
+    width: 100%;
+    height: 100%;
+    background-color: #6715ae; /* Hintergrundfarbe */
+    transition: left 0.5s ease-in-out; /* Animationsdauer und -typ */
+    z-index: 0; /* Hintergrund unter dem Text */
+}
+
+h1:hover::before {
+    left: 0; /* Bewegt sich in das Sichtfeld */
+}
+
+h1:hover {
+    color: #fff; /* Beibehaltung der Textfarbe beim Hover */
+    z-index: 0;
+}
 
   
-  }
 
   h2 {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   header {
@@ -189,7 +208,7 @@
 
 
   }
-}
+
     #skill-list {
         display: flex;
         flex-wrap: wrap;
