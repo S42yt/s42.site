@@ -2,16 +2,28 @@
 <html lang="en">
 
 <head>
-
   
 <title>S42 Portfolio</title>
 <header>
 
-<h1>
-  Welcome To My Portfolio
+<div id = "homepage">
+
+<h1 class = "ichfickemeineleben">
+
+S42.site
+
 </h1>
+
+<h1 class ="hoverback">
+Hey its me,<a> S42</a>
+</h1>
+</div>
+
+</h1>
+
+
 <h2>
-  The Homepage of S42
+    Languages and Tools i use 🔥
 </h2>
 
 
@@ -35,7 +47,7 @@
      height: 100%;
      background-color: black;
      color: white;
-     font-family: sans-serif;
+     font-family: "Sora";
      
 
  }
@@ -158,7 +170,7 @@
   
   <style>
 
-h1 {
+.hoverback {
     position: relative;
     display: inline-block;
     color: white; /* Textfarbe */
@@ -166,30 +178,54 @@ h1 {
     margin-top: 50px;
     text-align: center;
     z-index: 1; /* Text über dem Hintergrund */
+    margin-left: 30px;
 }
 
-h1::before {
+.hoverback::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%; /* Beginnt außerhalb des Sichtfeldes */
     width: 100%;
     height: 100%;
-    background-color: #6715ae; /* Hintergrundfarbe */
+    background-color: #700fb6; /* Hintergrundfarbe */
     transition: left 0.5s ease-in-out; /* Animationsdauer und -typ */
     z-index: -1; /* Hintergrund unter dem Text */
 }
 
-h1:hover::before {
+.hoverback:hover::before {
     left: 0; /* Bewegt sich in das Sichtfeld */
 }
 
-h1:hover {
+.hoverback:hover {
     transition: 1s; color:  #ffffff; /* Beibehaltung der Textfarbe beim Hover */
     z-index: 0;
 }
+.ichfickemeineleben {
+    font-size: 48px; /* Font size */
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+                0 0 10px rgba(165, 21, 143, 0.7), /* Green glow */
+                0 0 20px rgba(192, 18, 219, 0.9), /* Stronger green glow */
+                0 0 30px rgb(155, 19, 208); /* Bright green glow */
+    text-align: center;
+    position:relative;
 
-  
+
+
+}
+
+  a {
+    font-family: "Kanit";
+    background-image: linear-gradient(to right, #2eb6e0, #41a2c6); 
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+            animation: rainbow-animation 10s linear infinite;
+    
+
+
+  }
 
   h2 {
     text-align: center;
@@ -248,4 +284,57 @@ h1:hover {
         }
     }
   </style>
-  
+      <footer>
+        <div id="footer-container">
+            <div>
+                © 2024 S42.site. All rights reserved.
+            </div>
+            <div id="footer-refs">
+            </div>
+            <div id="made-tag">
+                Made by the 42 Unity
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+        #footer-container {
+            position: sticky;
+            bottom: 0px;
+            text-align: center;
+            color: white;
+            gap: 0.2rem;
+            display: grid;
+            font-family: 'Sora', sans-serif;
+            justify-content: center;
+            font-size: 0.9rem;
+            width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            padding: 1rem;
+            background-color: rgb(34, 34, 34);
+            background: linear-gradient(180deg, rgb(13, 13, 13), rgb(26, 26, 26) 90%);
+        }
+        .footer-ref {
+            color: rgb(129, 129, 129);
+            text-decoration: none;
+        }
+        #footer-refs {
+            display: grid;
+            gap: 1rem;
+            grid-auto-flow: column;
+        }
+        #made-tag {
+            /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);  */
+            background-image: linear-gradient(to right, #7a0392, #910d93, rgb(196, 4, 199)); 
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+            animation: rainbow-animation 10s linear infinite;
+        }
+        @keyframes rainbow-animation {
+            to {
+                background-position: 1400px;
+            }
+        }
+    </style>
