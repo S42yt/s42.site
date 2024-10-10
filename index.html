@@ -177,7 +177,7 @@ h1::before {
     height: 100%;
     background-color: #6715ae; /* Hintergrundfarbe */
     transition: left 0.5s ease-in-out; /* Animationsdauer und -typ */
-    z-index: 0; /* Hintergrund unter dem Text */
+    z-index: -1; /* Hintergrund unter dem Text */
 }
 
 h1:hover::before {
@@ -185,7 +185,7 @@ h1:hover::before {
 }
 
 h1:hover {
-    color: #fff; /* Beibehaltung der Textfarbe beim Hover */
+    transition: 1s; color:  #ffffff; /* Beibehaltung der Textfarbe beim Hover */
     z-index: 0;
 }
 
