@@ -76,6 +76,7 @@
             padding: 10px;
 
         }
+       
       
 
         .noselect {
@@ -116,7 +117,11 @@
                       <img src="https://skillicons.dev/icons?i=visualstudio">
                       Visual Studio
                   </div>
-                  <div>
+                    <div>
+                        <img src="https://raw.githubusercontent.com/JannisX11/blockbench/refs/heads/master/icon.ico">
+                        BlockBench
+                    </div>
+                    <div>
                       <img src="https://skillicons.dev/icons?i=js">
                       JavaScript
                   </div>
@@ -163,12 +168,18 @@
           <div id="project-container" data-aos="fade-left" data-aos-delay="200">
           </div>
 
+          
+        <div id="container">
+            <div id ="site-container">
+                <div id="workingon" data-aos="fade-right" data-aos-delay="200">
+                    <div>
 
+                        
+                </div>
 
-
-
-
-
+            </div>
+            </div>
+          </div>
       </main>
  </body>
  
@@ -302,7 +313,7 @@
         justify-content: center;
         display: grid;
         background: linear-gradient(150deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8));
-        border: 2px solid rgb(199, 12, 196);
+        border: 2px solid rgb(99, 0, 86);
         padding: 15px 20px;
         border-radius: 10px;
         height: 100%;
@@ -311,8 +322,15 @@
         transition-property: box-shadow, transform;
     }
     #skill-list > div:hover {
-        transform: scale(1.1);
-    }
+    transform: scale(1.1);
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+        0 0 20px rgba(167, 16, 180, 0.7), /* Pink glow */
+        0 0 30px rgba(221, 0, 255, 0.9), /* Stronger pink glow */
+        0 0 40px rgb(183, 0, 255); /* Bright pink glow */
+}
+
+    
     #skill-list > div > img {
         justify-self: center;
         aspect-ratio: 1/1;
@@ -329,6 +347,27 @@
             padding: 10px 15px;
         }
     }
+
+    
+    #skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    #skill-list > div {
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        background: linear-gradient(150deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8));
+        border: 2px solid rgb(199, 12, 196);
+        padding: 15px 20px;
+        border-radius: 10px;
+        height: 100%;
+        box-sizing: border-box;
+        transition: 0.2s ease-out;
+        transition-property: box-shadow, transform;
+    }   
   </style>
       <footer>
         <div id="footer-container">
