@@ -6,29 +6,26 @@
 <title>S42 Portfolio</title>
 <header>
 
-<div id = "homepage">
+    <div class="ichfickemeineleben">S42.site</div>
 
-<h1 class = "ichfickemeineleben">
-
-S42.site
-
-</h1>
-
-<h1 class ="hoverback">
-Hey its me,<a> S42</a>
-</h1>
+    <div id="homepage">
+    <div class="hoverbackhead">Hey its me, <a>S42</a></div>
+    <div class="hoverback">-15 y/o</div>
+    <div class="hoverback">- Enthusiastic Software Developer</div>
+    <div class="hoverback">-Software Designer</div>
+    
 </div>
 
-</h1>
 
 
-<h2>
+
+<div class="toolbox">
     Languages and Tools i use 🔥
-</h2>
+</div>
 
 
 </header>
-
+ 
  </head> 
  <style>
  @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
@@ -37,6 +34,7 @@ Hey its me,<a> S42</a>
  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
+ @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
  * {
      margin: 0;
      padding: 0;
@@ -48,9 +46,16 @@ Hey its me,<a> S42</a>
      background-color: black;
      color: white;
      font-family: "Sora";
-     
-
  }
+
+ #homepage {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 50px; /* Optional: adjust top margin for spacing */
+    margin-left: 30px; /* Space from the left edge */
+}
+
  *::-webkit-scrollbar-track {
             border-radius: 5px;
             background-color: #000000;
@@ -170,15 +175,59 @@ Hey its me,<a> S42</a>
   
   <style>
 
-.hoverback {
+.hoverbackhead {
     position: relative;
     display: inline-block;
     color: white; /* Textfarbe */
     overflow: hidden;
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
     z-index: 1; /* Text über dem Hintergrund */
     margin-left: 30px;
+    font-size: 35px;
+    margin-bottom: 10px; 
+}
+
+.hoverbackhead::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Beginnt außerhalb des Sichtfeldes */
+    width: 100%;
+    height: 100%;
+    background-color: #700fb6; /* Hintergrundfarbe */
+    transition: left 0.5s ease-in-out; /* Animationsdauer und -typ */
+    z-index: -1; /* Hintergrund unter dem Text */
+}
+
+.hoverbackhead:hover::before {
+    left: 0; /* Bewegt sich in das Sichtfeld */
+}
+
+.hoverbackhead:hover {
+    transition: 1s; color:  #ffffff; /* Beibehaltung der Textfarbe beim Hover */
+    z-index: 0;
+}
+.ichfickemeineleben {
+    font-size: 48px; /* Font size */
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+                0 0 10px rgba(165, 21, 143, 0.7), /* Green glow */
+                0 0 20px rgba(192, 18, 219, 0.9), /* Stronger green glow */
+                0 0 30px rgb(155, 19, 208); /* Bright green glow */
+    text-align: center;
+    position:relative;
+}
+.hoverback {
+    position: relative;
+    display: inline-block;
+    color: white; /* Textfarbe */
+    overflow: hidden;
+    text-align: left;
+    z-index: 1; /* Text über dem Hintergrund */
+    margin-left: 30px;
+    margin-bottom: 10px; 
+    font-size: 20px;
 }
 
 .hoverback::before {
@@ -201,19 +250,27 @@ Hey its me,<a> S42</a>
     transition: 1s; color:  #ffffff; /* Beibehaltung der Textfarbe beim Hover */
     z-index: 0;
 }
-.ichfickemeineleben {
-    font-size: 48px; /* Font size */
-            text-shadow: 
-                0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
-                0 0 10px rgba(165, 21, 143, 0.7), /* Green glow */
-                0 0 20px rgba(192, 18, 219, 0.9), /* Stronger green glow */
-                0 0 30px rgb(155, 19, 208); /* Bright green glow */
+
+.toolbox {
     text-align: center;
-    position:relative;
-
-
-
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    position: relative; /* Needed for the glow effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition for color and shadow */
+    color: #fff; /* Default color */
 }
+
+.toolbox:hover {
+    color: #fff; /* Change text color on hover */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+        0 0 20px rgba(165, 21, 143, 0.7), /* Pink glow */
+        0 0 30px rgba(221, 0, 255, 0.9), /* Stronger pink glow */
+        0 0 40px rgb(183, 0, 255); /* Bright pink glow */
+}
+
+
 
   a {
     font-family: "Kanit";
@@ -226,24 +283,13 @@ Hey its me,<a> S42</a>
 
 
   }
-
-  h2 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
   
   header {
     color: white;
     border-radius: 10px;
   }
   
-  #site-container {
-    padding-bottom: 10px;
 
-
-
-  }
 
     #skill-list {
         display: flex;
@@ -305,7 +351,7 @@ Hey its me,<a> S42</a>
             color: white;
             gap: 0.2rem;
             display: grid;
-            font-family: 'Sora', sans-serif;
+            font-family: 'Bebas Neue', sans-serif;
             justify-content: center;
             font-size: 0.9rem;
             width: 100%;
