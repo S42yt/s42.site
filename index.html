@@ -35,26 +35,38 @@
      height: 100%;
      background-color: black;
      color: white;
+     font-family: sans-serif;
+     
 
  }
+ #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Partikel-Hintergrund hinter dem Inhalt */
+}
  *::-webkit-scrollbar-track {
             border-radius: 5px;
-            background-color: #171824;
+            background-color: #000000;
         }
         *::-webkit-scrollbar {
-            border-radius: 5px;
-            width: 8px;
+            border-radius: 8px;
+            width: 5px;
         }
         *::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            background-color: #0080ff;
+            border-radius: 3px;
+            background-color: #a910b7;
         }
         #container {
-            display: flex;
+          display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+
         }
+      
+
         .noselect {
             -webkit-touch-callout: none; /* iOS Safari */
               -webkit-user-select: none; /* Safari */
@@ -64,6 +76,7 @@
                       user-select: none; /* Non-prefixed version, currently
                                             supported by Chrome, Edge, Opera and Firefox */
         }
+        
 
 </style>
 <script>
@@ -74,16 +87,66 @@
 
 
 
+
  <body>
 
 
       <main>
-        <div class="Box">
-
-
-
-
-        </div>
+      
+        <div id="container">
+        <div id="site-container">
+          <div id="skillzz" data-aos="fade-right" data-aos-delay="200">
+              <div id="skill-list">
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=vscode">
+                      VS Code
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=visualstudio">
+                      Visual Studio
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=js">
+                      JavaScript
+                  </div>
+                  <div>
+                    <img src="https://skillicons.dev/icons?i=ts">
+                    TypeScript
+                </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=html">
+                      HTML
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=css">
+                      CSS
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=cs">
+                      C-Sharp
+                  </div>
+              
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=nodejs">
+                      Node.js
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=discordjs">
+                      Discord.js
+                  </div>
+               
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=github">
+                      GitHub
+                  </div>
+                  <div>
+                      <img src="https://skillicons.dev/icons?i=git">
+                      Git
+                  </div>
+              </div>
+          </div>
+          <div id="project-container" data-aos="fade-left" data-aos-delay="200">
+          </div>
 
 
 
@@ -97,10 +160,17 @@
   
   <style>
   h1 {
-    background-color: blue;
+    transition: 1s;
     margin-top: 50px;
-    text-align: left;
-    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  h1:hover {
+  transition: 1s;border-radius: 20px;background-color: #0080ff;
+
+  
   }
 
   h2 {
@@ -113,8 +183,50 @@
     border-radius: 10px;
   }
   
-  h1 {
-    margin: 0;
+  #site-container {
+    padding-bottom: 10px;
+
+
+
   }
+}
+    #skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    #skill-list > div {
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        background: linear-gradient(150deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8));
+        border: 2px solid rgb(199, 12, 196);
+        padding: 15px 20px;
+        border-radius: 10px;
+        height: 100%;
+        box-sizing: border-box;
+        transition: 0.2s ease-out;
+        transition-property: box-shadow, transform;
+    }
+    #skill-list > div:hover {
+        transform: scale(1.1);
+    }
+    #skill-list > div > img {
+        justify-self: center;
+        aspect-ratio: 1/1;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 800px) {
+        #skill-list > div > img {
+            width: 60px;
+            margin-bottom: 10x;
+        }
+        #skill-list > div {
+            font-size: 15px;
+            padding: 10px 15px;
+        }
+    }
   </style>
   
