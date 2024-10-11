@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  
+
 <title>S42 Portfolio</title>
 <header>
 
     <div class="ichfickemeineleben">S42.site</div>
 
     <div id="homepage">
-    <div class="hoverbackhead">Hey its me, <a>S42</a></div>
+    <div class="hoverbackhead">Hey its me, <a id= "flowy">S42</a></div>
     <div class="hoverback">-15 y/o</div>
-    <div class="hoverback">- Enthusiastic Software Developer</div>
+    <div class="hoverback">- Software Developer</div>
     <div class="hoverback">-Software Designer</div>
-    
+
 </div>
 
 
@@ -25,8 +26,8 @@
 
 
 </header>
- 
- </head> 
+
+ </head>
  <style>
  @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
@@ -35,6 +36,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+ 
  * {
      margin: 0;
      padding: 0;
@@ -74,10 +78,12 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
+            border: 2px;
+
 
         }
-       
-      
+
+
 
         .noselect {
             -webkit-touch-callout: none; /* iOS Safari */
@@ -88,7 +94,7 @@
                       user-select: none; /* Non-prefixed version, currently
                                             supported by Chrome, Edge, Opera and Firefox */
         }
-        
+
 
 </style>
 <script>
@@ -104,12 +110,11 @@
 
 
       <main>
-      
+
         <div id="box">
-        <div id="site-container">
           <div id="skillzz" data-aos="fade-right" data-aos-delay="200">
               <div id="skillsss">
-                  <div>
+                <div>
                       <img src="https://skillicons.dev/icons?i=vscode">
                       VS Code
                   </div>
@@ -117,7 +122,7 @@
                       <img src="https://skillicons.dev/icons?i=visualstudio">
                       Visual Studio
                   </div>
-                    <div>
+                  <div>
                         <img src="https://raw.githubusercontent.com/JannisX11/blockbench/refs/heads/master/icon.ico">
                         BlockBench
                     </div>
@@ -125,11 +130,10 @@
                       <img src="https://skillicons.dev/icons?i=js">
                       JavaScript
                   </div>
-                  <div>
-                    <img src="https://skillicons.dev/icons?i=ts">
+                  <div>                    <img src="https://skillicons.dev/icons?i=ts">
                     TypeScript
                 </div>
-                  <div>
+                <div>
                       <img src="https://skillicons.dev/icons?i=html">
                       HTML
                   </div>
@@ -145,16 +149,15 @@
                     <img src="https://skillicons.dev/icons?i=unity">
                     Unity Engine
                 </div>
-              
-                  <div>
+
+                <div>
                       <img src="https://skillicons.dev/icons?i=nodejs">
                       Node.js
                   </div>
-                  <div>
-                      <img src="https://skillicons.dev/icons?i=discordjs">
+                  <div>                    <img src="https://skillicons.dev/icons?i=discordjs">
                       Discord.js
                   </div>
-               
+
                   <div>
                       <img src="https://skillicons.dev/icons?i=github">
                       GitHub
@@ -168,22 +171,23 @@
           <div id="project-container" data-aos="fade-left" data-aos-delay="200">
           </div>
 
-          
+
         <div id="box">
             <div id ="site-container">
                 <div id="workingon" data-aos="fade-right" data-aos-delay="200">
-                    <div>
+                    <div class ="toolbox">
 
-                        
+                        Projects i work on 💷
                 </div>
 
             </div>
             </div>
           </div>
       </main>
+
  </body>
- 
-  
+
+
   <style>
 
 .hoverbackhead {
@@ -196,7 +200,8 @@
     z-index: 1; /* Text über dem Hintergrund */
     margin-left: 30px;
     font-size: 35px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    font-family: "Bebas Neue"
 }
 
 .hoverbackhead::before {
@@ -221,7 +226,7 @@
 }
 .ichfickemeineleben {
     font-size: 48px; /* Font size */
-            text-shadow: 
+            text-shadow:
                 0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
                 0 0 10px rgba(165, 21, 143, 0.7), /* Green glow */
                 0 0 20px rgba(192, 18, 219, 0.9), /* Stronger green glow */
@@ -237,7 +242,7 @@
     text-align: left;
     z-index: 1; /* Text über dem Hintergrund */
     margin-left: 30px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -266,15 +271,16 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 25px;
+    font-size: 40px;
     position: relative; /* Needed for the glow effect */
     transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition for color and shadow */
     color: #fff; /* Default color */
+    font-family: "Bebas Neue",Arial;
 }
 
 .toolbox:hover {
     color: #fff; /* Change text color on hover */
-    text-shadow: 
+    text-shadow:
         0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
         0 0 20px rgba(165, 21, 143, 0.7), /* Pink glow */
         0 0 30px rgba(221, 0, 255, 0.9), /* Stronger pink glow */
@@ -283,23 +289,23 @@
 
 
 
-  a {
-    font-family: "Kanit";
-    background-image: linear-gradient(to right, #2eb6e0, #41a2c6); 
+  #flowy {
+    font-family: "Bebas Neue";
+    background-image: linear-gradient(to right, #2eb6e0, #41a2c6);
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;  
+            -webkit-text-fill-color: transparent;
             animation: rainbow-animation 10s linear infinite;
-    
+
 
 
   }
-  
+
   header {
     color: white;
     border-radius: 10px;
   }
-  
+
 
 
     #skillsss {
@@ -312,25 +318,26 @@
         text-align: center;
         justify-content: center;
         display: grid;
-        background: linear-gradient(150deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8));
-        border: 2px solid rgb(99, 0, 86);
+        background:gray;
         padding: 15px 20px;
         border-radius: 10px;
         height: 100%;
         box-sizing: border-box;
         transition: 0.2s ease-out;
-        transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform, text-shadow;
     }
-    #skillsss > div:hover {
+   #skillsss > div:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: scale(1.1);
-    text-shadow: 
-        0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
-        0 0 20px rgba(167, 16, 180, 0.7), /* Pink glow */
-        0 0 30px rgba(221, 0, 255, 0.9), /* Stronger pink glow */
-        0 0 40px rgb(183, 0, 255); /* Bright pink glow */
+    box-shadow:
+        0 0 5px rgba(255, 255, 255, 0.5),  /* White glow */
+        0 0 20px rgba(167, 16, 180, 0.7),  /* Pink glow */
+        0 0 30px rgba(221, 0, 255, 0.9),  /* Stronger pink glow */
+        0 0 40px rgb(183, 0, 255);         /* Bright pink glow */
 }
 
-    
+
+
     #skillsss > div > img {
         justify-self: center;
         aspect-ratio: 1/1;
@@ -343,12 +350,13 @@
             margin-bottom: 10x;
         }
         #skillsss > div {
-            font-size: 15px;
+            font-size: 10px;
             padding: 10px 15px;
+        font-family: "Mukta";
         }
     }
 
-    
+
     #skillsss {
         display: flex;
         flex-wrap: wrap;
@@ -360,14 +368,60 @@
         justify-content: center;
         display: grid;
         background: linear-gradient(150deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8));
-        border: 2px solid rgb(199, 12, 196);
         padding: 15px 20px;
         border-radius: 10px;
         height: 100%;
         box-sizing: border-box;
         transition: 0.2s ease-out;
         transition-property: box-shadow, transform;
-    }   
+    }
+    .animated-border-box {
+    position: relative;
+    width: 150px; /* Original width */
+    height: 150px; /* Original height */
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.animated-border-box:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 99999px;
+    height: 99999px;
+    background-image: conic-gradient(rgba(0, 0, 0, 0), #d20ecb, rgba(0, 0, 0, 0) 25%);
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+}
+
+.animated-border-box:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: #000000;
+    border-radius: 7px;
+    z-index: -1;
+}
+
+.animated-border-box:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+                0 0 25px rgba(167, 16, 180, 0.7),
+                0 0 35px rgba(221, 0, 255, 0.9),
+                0 0 45px rgb(183, 0, 255);
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
   </style>
       <footer>
         <div id="footer-container">
@@ -379,9 +433,24 @@
             <div id="made-tag">
                 Made by the 42 Unity
             </div>
+            <div id = "conact">
+                Contact me Through:
+
+                <div class = "contactdc">
+                    <a href="https://discord.com/users/787306646417571860" class="contactdc" target="_blank">
+                        Discord
+                    </a>
+                </div>
+                <div class = "contactgoon">
+                    <a href="https://github.com/S42yt" class="contactgoon" target="_blank">
+                    GitHub
+                    </a>
+                </div>
+
+            </div>
         </div>
     </footer>
-    
+
     <style>
         #footer-container {
             position: sticky;
@@ -411,15 +480,39 @@
         }
         #made-tag {
             /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);  */
-            background-image: linear-gradient(to right, #7a0392, #910d93, rgb(196, 4, 199)); 
+            background-image: linear-gradient(to right, #7a0392, #910d93, rgb(196, 4, 199));
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;  
+            -webkit-text-fill-color: transparent;
             animation: rainbow-animation 10s linear infinite;
         }
         @keyframes rainbow-animation {
             to {
                 background-position: 1400px;
             }
+        }
+
+        #conact {
+            text-align:center;
+            display:inline;
+            font-size: 17px;
+
+        }
+        .contactdc {
+        color: #2c35db;
+            font-size: 16px;
+            text-decoration:none;
+        }
+        .contactdc:hover{
+            text-decoration-line:underline;
+        }
+        .contactgoon {
+        color: #434457 ;
+                font-size: 16px;
+            text-decoration:none;
+
+        }
+        .contactgoon:hover {
+            text-decoration-line:underline;
         }
     </style>
